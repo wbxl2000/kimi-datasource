@@ -2,7 +2,7 @@
 
 ## 3.4.0 - 2026-08-17
 
-- Add three data sources: `china_public_data` (中国政府开放数据 — 国家数据 / 国家统计局), `china_standards` (中国标准 — GB 国家标准 / HB 行业标准 / DB 地方标准 / TT 团体标准), and `igo_open_data` (国际组织开放数据 — WHO, FAO, UNSD, ECB, Eurostat, UNICEF, OECD, FRED).
+- Add thirteen data sources: `china_nda` (国家数据局开放数据目录), `china_nbs` (国家统计局宏观指标), `china_standards` (中国标准 — GB 国家标准 / HB 行业标准 / DB 地方标准 / TT 团体标准), eight international organization sources (`who`, `fao`, `unsd`, `ecb`, `eurostat`, `unicef`, `oecd`, `fred`), `xhcj` (新华财经快讯 / 公告 / 政策), and `caixin` (财新数据库).
 
 ## 3.3.0 - 2026-07-22
 

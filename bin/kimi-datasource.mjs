@@ -72,9 +72,19 @@ const TOOLS = [
             'gildata',
             'sec_edgar',
             'sp_data',
-            'china_public_data',
+            'china_nda',
+            'china_nbs',
             'china_standards',
-            'igo_open_data',
+            'who',
+            'fao',
+            'unsd',
+            'ecb',
+            'eurostat',
+            'unicef',
+            'oecd',
+            'fred',
+            'xhcj',
+            'caixin',
           ],
           description:
             'Data source name. Capabilities: stock_finance_data / yahoo_finance = general quotes and financials ' +
@@ -85,9 +95,13 @@ const TOOLS = [
             'gildata = natural-language stock/fund screening; ' +
             'sec_edgar = US filings (10-K/10-Q, S-1, Form 4, 13F, 8-K); ' +
             'sp_data = S&P fundamentals (consensus estimates, valuation ratios, transcripts); ' +
-            'china_public_data = CN government statistics (National Data / NBS); ' +
+            'china_nda = CN government open data catalogs (National Data Administration registry + provincial platforms); ' +
+            'china_nbs = CN NBS macro indicators and time series (national / provincial / major-city scopes); ' +
             'china_standards = CN standards (GB national, HB industry, DB local, TT association); ' +
-            'igo_open_data = international org open data (WHO, FAO, UNSD, ECB, Eurostat, UNICEF, OECD, FRED).',
+            'who / fao / unsd / ecb / eurostat / unicef / oecd / fred = international organization open data ' +
+            '(global health, food & agriculture, UN statistics, ECB & EU statistics, child indicators, OECD datasets, US & global macro series); ' +
+            'xhcj = Xinhua Finance (CNFIC) news flashes, announcements, and policies; ' +
+            'caixin = Caixin database (600+ data APIs, discover via caixin_api_search first).',
         },
       },
       required: ['name'],
