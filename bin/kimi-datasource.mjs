@@ -18,7 +18,7 @@ import { arch, homedir, hostname, release, type } from 'node:os';
 import path from 'node:path';
 import readline from 'node:readline';
 
-const VERSION = '3.4.0';
+const VERSION = '3.5.0';
 const DEFAULT_KIMI_CODE_OAUTH_HOST = 'https://auth.kimi.com';
 const DEFAULT_KIMI_CODE_BASE_URL = 'https://api.kimi.com/coding/v1';
 const API_URL = datasourceApiUrl();
@@ -85,6 +85,16 @@ const TOOLS = [
             'fred',
             'xhcj',
             'caixin',
+            'chembl',
+            'materials_project',
+            'ncbi_blast',
+            'oqmd',
+            'pdb',
+            'pubchem',
+            'uniprot',
+            'dongcai',
+            'cls',
+            'finance_research',
           ],
           description:
             'Data source name. Capabilities: stock_finance_data / yahoo_finance = general quotes and financials ' +
@@ -101,7 +111,17 @@ const TOOLS = [
             'who / fao / unsd / ecb / eurostat / unicef / oecd / fred = international organization open data ' +
             '(global health, food & agriculture, UN statistics, ECB & EU statistics, child indicators, OECD datasets, US & global macro series); ' +
             'xhcj = Xinhua Finance (CNFIC) news flashes, announcements, and policies; ' +
-            'caixin = Caixin database (600+ data APIs, discover via caixin_api_search first).',
+            'caixin = Caixin database (600+ data APIs, discover via caixin_api_search first); ' +
+            'chembl = curated ChEMBL compounds, targets, assays, bioactivities, and mechanisms of action; ' +
+            'materials_project = Materials Project DFT properties and MP ID lookup (requires MP_API_KEY); ' +
+            'ncbi_blast = asynchronous nucleotide/protein sequence similarity searches; ' +
+            'oqmd = OQMD DFT material properties and OPTIMADE crystal structures; ' +
+            'pdb = RCSB PDB experimental 3D structures, polymer entities, and ligands; ' +
+            'pubchem = PubChem chemical identities, synonyms, computed properties, and 2D similarity; ' +
+            'uniprot = UniProtKB protein sequences, annotations, and cross-database ID mapping; ' +
+            'dongcai = Eastmoney financial data, market analysis, and research report generation; ' +
+            'cls = CLS financial telegraphs and in-depth news; ' +
+            'finance_research = domestic and international sell-side research reports.',
         },
       },
       required: ['name'],

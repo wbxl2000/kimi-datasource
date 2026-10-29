@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.5.0 - 2026-10-29
+
+- Add seven science data sources: `chembl`, `materials_project`, `ncbi_blast`, `oqmd`, `pdb`, `pubchem`, and `uniprot`.
+- Add three financial data and research sources: `dongcai`, `cls`, and `finance_research`.
+- Document source-selection boundaries and JSON, text, and report outputs alongside existing CSV results.
+
 ## 3.4.0 - 2026-08-17
 
 - Add thirteen data sources: `china_nda` (国家数据局开放数据目录), `china_nbs` (国家统计局宏观指标), `china_standards` (中国标准 — GB 国家标准 / HB 行业标准 / DB 地方标准 / TT 团体标准), eight international organization sources (`who`, `fao`, `unsd`, `ecb`, `eurostat`, `unicef`, `oecd`, `fred`), `xhcj` (新华财经快讯 / 公告 / 政策), and `caixin` (财新数据库).
